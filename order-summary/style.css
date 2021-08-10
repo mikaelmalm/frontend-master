@@ -1,0 +1,179 @@
+* {
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+  outline-offset: 5px;
+  outline-color: hsl(245, 75%, 52%);
+}
+
+html,
+body,
+section,
+img,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 1.375rem;
+  line-height: 1.6;
+  font-weight: 900;
+}
+
+a {
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+  font-size: 0.75rem;
+  transition: color 0.1s ease;
+}
+
+a:hover,
+a:focus {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 9 00;
+}
+
+main {
+  background-color: #fff;
+  max-width: 450px;
+  margin: 70px 15px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+  box-shadow: 0px 15px 40px 0px hsl(224deg 23% 55% / 50%);
+}
+
+main > img {
+  max-width: 100%;
+  width: 100%;
+}
+
+main > section {
+  margin: 20px;
+  text-align: center;
+}
+
+section h1 {
+  margin: 10px 0 15px;
+}
+
+.summary {
+  color: hsl(224, 23%, 55%);
+  margin: 0 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.payment {
+  background-color: hsl(225, 100%, 98%);
+  margin: 25px 0;
+  padding: 15px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.payment a {
+  text-align: right;
+}
+
+.price {
+  display: grid;
+}
+
+.price span {
+  color: hsl(224, 23%, 55%);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 100%;
+  padding: 15px;
+  margin: 0 0 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 0.1s ease, background 0.1s ease;
+}
+
+button.primary {
+  color: #fff;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0px 5px 40px 0px hsl(224deg 23% 55% / 50%);
+}
+
+button.primary:hover,
+button.primary:focus {
+  background-color: #766cf1;
+}
+
+button.secondary {
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 0px;
+}
+
+button.secondary:hover,
+button.secondary:focus {
+  color: #000;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.attribution a {
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  main > section {
+    margin: 20px 40px;
+  }
+
+  .payment {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .payment a {
+    font-size: 0.875rem;
+  }
+}
